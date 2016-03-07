@@ -2,5 +2,5 @@
 
 strvec Game::Input(string input)
 {
-    return {};
+    return { "HUNT THE WUMPUS" };
 }
