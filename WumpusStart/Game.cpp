@@ -12,6 +12,6 @@ strvec Game::Input(string input)
         Msg::HuntTheWumpus,
         "",
         Msg::YouAreInRoom + to_string(m_playerRoom),
-        "TUNNELS LEAD TO 1 3 10"
+        Msg::TunnelsLeadTo + "1 3 10"
     };
 }

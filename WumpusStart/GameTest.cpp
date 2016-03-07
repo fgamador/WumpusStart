@@ -13,6 +13,6 @@ TEST_CASE("Game")
         Msg::HuntTheWumpus,
         "",
         Msg::YouAreInRoom + "2",
-        "TUNNELS LEAD TO 1 3 10"
+        Msg::TunnelsLeadTo + "1 3 10"
     }));
 }
