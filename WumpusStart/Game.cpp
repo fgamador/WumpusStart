@@ -1,11 +1,6 @@
 #include "Game.h"
 #include "Msg.h"
 
-Game::Game()
-{
-    m_connected[2] = { 1, 3, 10 };
-}
-
 void Game::SetPlayerRoom(int room)
 {
     m_playerRoom = room;
@@ -27,5 +22,5 @@ strvec Game::Input(string input)
 
 ints3 Game::GetConnectedRooms(int room)
 {
-    return m_connected[room];
+    return m_map.m_connected[room];
 }
