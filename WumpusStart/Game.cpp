@@ -3,9 +3,10 @@
 
 void Game::SetPlayerRoom(int room)
 {
+    m_playerRoom = room;
 }
 
 strvec Game::Input(string input)
 {
-    return{ Msg::HuntTheWumpus, "", Msg::YouAreInRoom + "2" };
+    return{ Msg::HuntTheWumpus, "", Msg::YouAreInRoom + to_string(m_playerRoom) };
 }
