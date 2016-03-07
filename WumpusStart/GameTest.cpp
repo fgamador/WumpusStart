@@ -9,5 +9,10 @@ TEST_CASE("Game")
     Game game;
     game.SetPlayerRoom(2);
     strvec output = game.Input("");
-    REQUIRE(output == strvec({ Msg::HuntTheWumpus, "", Msg::YouAreInRoom + "2" }));
+    REQUIRE(output == strvec({
+        Msg::HuntTheWumpus,
+        "",
+        Msg::YouAreInRoom + "2",
+        "TUNNELS LEAD TO 1 3 10"
+    }));
 }
