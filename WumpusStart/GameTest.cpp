@@ -8,5 +8,5 @@ TEST_CASE("Game")
 {
     Game game;
     strvec output = game.Input("");
-    REQUIRE(output == strvec({ Msg::HuntTheWumpus }));
+    REQUIRE(output == strvec({ Msg::HuntTheWumpus, "" }));
 }
