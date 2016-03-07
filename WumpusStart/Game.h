@@ -1,10 +1,6 @@
 #pragma once
 
-#include <string>
-#include <vector>
-using namespace std;
-
-using strvec = vector<string>;
+#include "stdtypes.h"
 
 class Game
 {

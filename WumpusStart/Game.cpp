@@ -1,6 +1,7 @@
 #include "Game.h"
+#include "Msg.h"
 
 strvec Game::Input(string input)
 {
-    return { "HUNT THE WUMPUS" };
+    return { Msg::HuntTheWumpus };
 }
