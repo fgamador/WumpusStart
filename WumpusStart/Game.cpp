@@ -7,5 +7,5 @@ void Game::SetPlayerRoom(int room)
 
 strvec Game::Input(string input)
 {
-    return { Msg::HuntTheWumpus, "", "YOU ARE IN ROOM 2" };
+    return{ Msg::HuntTheWumpus, "", Msg::YouAreInRoom + "2" };
 }
