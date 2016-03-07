@@ -8,5 +8,10 @@ void Game::SetPlayerRoom(int room)
 
 strvec Game::Input(string input)
 {
-    return{ Msg::HuntTheWumpus, "", Msg::YouAreInRoom + to_string(m_playerRoom) };
+    return {
+        Msg::HuntTheWumpus,
+        "",
+        Msg::YouAreInRoom + to_string(m_playerRoom),
+        "TUNNELS LEAD TO 1 3 10"
+    };
 }
