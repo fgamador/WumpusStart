@@ -3,5 +3,5 @@
 
 strvec Game::Input(string input)
 {
-    return { Msg::HuntTheWumpus };
+    return { Msg::HuntTheWumpus, "" };
 }
