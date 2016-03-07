@@ -22,5 +22,5 @@ strvec Game::Input(string input)
 
 ints3 Game::GetConnectedRooms(int room)
 {
-    return m_map.m_connected[room];
+    return m_map.GetConnectedRooms(room);
 }
