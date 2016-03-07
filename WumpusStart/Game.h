@@ -5,5 +5,6 @@
 class Game
 {
 public:
+    void SetPlayerRoom(int room);
     strvec Input(string input);
 };
