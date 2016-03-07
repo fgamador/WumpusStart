@@ -1,5 +1,6 @@
 #pragma once
 
+#include "Map.h"
 #include "stdtypes.h"
 
 class Game
@@ -13,6 +14,7 @@ private:
     ints3 GetConnectedRooms(int room);
 
 private:
+    Map m_map;
     array<ints3, 21> m_connected;
     int m_playerRoom;
 };

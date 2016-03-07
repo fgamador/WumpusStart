@@ -80,6 +80,7 @@
   <ItemGroup>
     <ClInclude Include="catch.hpp" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Map.h" />
     <ClInclude Include="Msg.h" />
     <ClInclude Include="stdtypes.h" />
   </ItemGroup>
