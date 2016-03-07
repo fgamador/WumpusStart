@@ -9,9 +9,6 @@ public:
     strvec Input(string input);
 
 private:
-    ints3 GetConnectedRooms(int room);
-
-private:
     Map m_map;
     int m_playerRoom;
 };

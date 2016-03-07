@@ -8,7 +8,7 @@ void Game::SetPlayerRoom(int room)
 
 strvec Game::Input(string input)
 {
-    ints3 connected = GetConnectedRooms(m_playerRoom);
+    ints3 connected = m_map.GetConnectedRooms(m_playerRoom);
     return {
         Msg::HuntTheWumpus,
         "",
@@ -18,9 +18,4 @@ strvec Game::Input(string input)
             + " " + to_string(connected[1])
             + " " + to_string(connected[2])
     };
-}
-
-ints3 Game::GetConnectedRooms(int room)
-{
-    return m_map.GetConnectedRooms(room);
 }
